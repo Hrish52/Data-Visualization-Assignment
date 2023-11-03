@@ -16,6 +16,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
+
   <div id="vis"></div>
   <script>
     (function(vegaEmbed) {
@@ -36,5 +37,21 @@
     })(vegaEmbed);
 
   </script>
+  <br>
+  In the above plot, we are determining if there is a relationship between anime rating (Score) with respect to popularity of the anime according 
+  to a particular genre. The reason of ploting a scatterplot for these two factors is that they are both quantitative and it's ideal to use scatterplot 
+  to find a potential corelation between the two. The x-axis represents popularity and y-axis respresents the rating (score) of the anime, which provides 
+  a clear and direct visualization of the relationship. Each datapoint represents the anime. The tooltip used here is to provide more detailed information 
+  about the anime such as it's title, genre, score and popularity, to avoid cluttering while viewing the plot. The interactive feature used for this plot is 
+  a dropdown menu to filter the anime by it's genre. Upon analyzing the data, I see that there were a lot of genres present in the data and we can't add a legend 
+  for the same as it will make the plot in-effective as well as less expressive. So, to solve this issue, I added a dropdown menu to filter the anime 
+  according to it's genre and this interactive element allows user to facilitate towards more focused analysis of their favourite anime with diverse 
+  range of genres. Also, the points in the initial plot were really cluttered and it was difficult to figure out between different datapoints. 
+  So, to solve this, I added a zoom feature further to enable a closer examination of the datapoints without any overlapping as well as clutter 
+  issues and also, to look for outliers present in the data. Also, the conditional opacity, which highlights selected genres while dimming others, 
+  ensures that the selected datapoint stands out after filtering the data using dropdown menu and effectively guide the viewer's attention and to 
+  make the exploration both intuitive and insightful. So, these interactive features transform a basic scatterplot from a static to a dynamic plot, 
+  making the visual analysis informative as well as enagaging. So, from the plot we can infer that, most ratings range from approximately 6 to 9 and 
+  high rating doesn't mean high popularity and vice versa, telling us that other factors also influence the rating of the anime.
 </body>
 </html>
